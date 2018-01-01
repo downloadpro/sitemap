@@ -15,6 +15,8 @@
 // ---------------------------------------------------
 // Modified by Aneesh 
 // www.bloggerplugins.org
+// تعريب مدونة كن داعيا للخير 
+// http://www.condaianllkhir.com/
 // Date : 02-08-2011
 // global arrays
 
@@ -93,7 +95,7 @@ function loadtoc(json) {
             var pll = '';
             if ("category" in entry) {
                for (var k = 0; k < entry.category.length; k++) {
-                  pll += '<a href="javascript:filterPosts(\'' + entry.category[k].term + '\');" title="اضغط هنا لإظهار جميع المشاركات لهذا القسم \'' + entry.category[k].term + '\'">' + entry.category[k].term + '</a>,  ';
+                  pll += '<a href="javascript:filterPosts(\'' + entry.category[k].term + '\');" title="Click here to select all posts with label \'' + entry.category[k].term + '\'">' + entry.category[k].term + '</a>,  ';
                }
             var l = pll.lastIndexOf(',');
             if (l != -1) { pll = pll.substring(0,l); }
@@ -183,29 +185,29 @@ function displayToc(filter) {
    var numDisplayed = 0;
    var tocTable = '';
    var tocHead1 = 'عنوان الموضوع';
-   var tocTool1 = 'اضغط للترتيب بحسب العنوان';
+   var tocTool1 = 'Click to sort by title';
    var tocHead2 = 'التاريخ';
-   var tocTool2 = 'اضغط للترتيب حسب التاريخ';
+   var tocTool2 = 'Click to sort by date';
    var tocHead3 = 'الأقسام';
    var tocTool3 = '';
    if (sortBy == "titleasc") { 
-      tocTool1 += ' (تنازلي)';
-      tocTool2 += ' (الأحدث أولا)';
+      tocTool1 += ' (descending)';
+      tocTool2 += ' (newest first)';
    }
    if (sortBy == "titledesc") { 
-      tocTool1 += ' (تصاعدي)';
-      tocTool2 += ' (الأحدث أولا)';
+      tocTool1 += ' (ascending)';
+      tocTool2 += ' (newest first)';
    }
    if (sortBy == "dateoldest") { 
-      tocTool1 += ' (تصاعدي)';
-      tocTool2 += ' (الأحدث أولا)';
+      tocTool1 += ' (ascending)';
+      tocTool2 += ' (newest first)';
    }
    if (sortBy == "datenewest") { 
-      tocTool1 += ' (تصاعدي)';
-      tocTool2 += ' (الأقدم أولا)';
+      tocTool1 += ' (ascending)';
+      tocTool2 += ' (oldest first)';
    }
    if (postFilter != '') {
-      tocTool3 = 'اضغط لعرض كل المشاركات';
+      tocTool3 = 'Click to show all posts';
    }
    tocTable += '<table>';
    tocTable += '<tr>';
