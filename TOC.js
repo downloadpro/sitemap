@@ -264,12 +264,12 @@ function showToc() {
   }
   else { alert("Just wait... TOC is loading"); }
 }
-"<div id=\"toc-loading\">Loading content, please wait...<br /><img align=\"middle\" src=\"http://2.bp.blogspot.com/-WK0-4ILTaL8/T0NjToWRWlI/AAAAAAAABmI/U5p3cqo9lOU/s1600/loading.gif\" /></div>"
+"<div id=\"toc-loading\">Loading content, please wait...<br /><img align=\"middle\" src=\"https://2.bp.blogspot.com/-WK0-4ILTaL8/T0NjToWRWlI/AAAAAAAABmI/U5p3cqo9lOU/s1600/loading.gif\" /></div>"
 
 function hideToc() {
   var tocdiv = document.getElementById("toc");
   tocdiv.innerHTML = '';
   var toclink = document.getElementById("toclink");
-  toclink.innerHTML = '<a href="#" onclick="scroll(0,0); showToc(); Effect.toggle('+"'toc-result','blind');"+'">» Show Table of Contents</a> <img src="http://chenkaie.blog.googlepages.com/new_1.gif"/>';
+  toclink.innerHTML = '<a href="#" onclick="scroll(0,0); showToc(); Effect.toggle('+"'toc-result','blind');"+'">» Show Table of Contents</a> <img src="https://sites.google.com/site/chenkaieblog/new_1.gif"/>';
 }
-"<div id=\"toc-loading\">Loading content, please wait...<br /><img align=\"middle\" src=\"http://2.bp.blogspot.com/-WK0-4ILTaL8/T0NjToWRWlI/AAAAAAAABmI/U5p3cqo9lOU/s1600/loading.gif\" /></div>";
+"<div id=\"toc-loading\">Loading content, please wait...<br /><img align=\"middle\" src=\"https://2.bp.blogspot.com/-WK0-4ILTaL8/T0NjToWRWlI/AAAAAAAABmI/U5p3cqo9lOU/s1600/loading.gif\" /></div>";
